@@ -23,6 +23,8 @@ function Header() {
         </div>
 
         <div className="header-nav">
+
+            <Link to="/login">
             <div className="header-opt">
                 <span className='opt-lineOne'>
                     Hello Guest
@@ -33,6 +35,8 @@ function Header() {
                     Sign In
                 </span>
             </div>
+
+            </Link>
             <div className="header-opt">
                 <span className='opt-lineOne'>
                     Returns &

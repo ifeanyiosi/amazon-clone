@@ -10,7 +10,7 @@ function Header() {
     <div className='header'>
         <Link to="/">
             <div className='logo'>
-            <h1 className='logo'>BATTLETIDE  </h1></div>
+            <h1 className='logo'> IFEANYIOSI </h1></div>
         </Link>
         
 

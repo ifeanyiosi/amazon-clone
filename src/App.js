@@ -18,8 +18,16 @@ function App() {
       console.log('THE USER IS >>>>>', authUser);
 
       if (authUser) {
+        dispatch({
+          type: 'SET_USER',
+          user: authUser
+        })
 
       } else {
+        dispatch({
+          type: 'SET_USER',
+          user: null
+        })
 
       }
     })

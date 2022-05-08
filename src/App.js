@@ -9,6 +9,7 @@ import Login from './Login';
 import React, { useEffect } from 'react';
 import { auth } from './firebase';
 import { useStateValue } from './Stateprovider';
+import IdleTimerCOntainer from './IdleTimerCOntainer';
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -38,6 +39,8 @@ function App() {
 
     <Router>
     <div className="App">
+
+      <IdleTimerCOntainer/>
       
 
       <Switch>

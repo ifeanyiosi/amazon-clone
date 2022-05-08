@@ -4,8 +4,20 @@ import { Search, ShoppingBag, ShoppingBasketOutlined } from "@mui/icons-material
 import { Link } from 'react-router-dom'
 import { useStateValue } from './Stateprovider';
 import { auth } from './firebase';
+import IdleTimer from 'react-idle-timer';
+import Modal from 'react-modal';
+import IdleTimerCOntainer from './IdleTimerCOntainer';
 
 function Header() {
+
+    // const logOut = () =>{
+    //     setModalIsOpen(false)
+    //     setModalIsloggedIn(false)
+    //     clearTimeout(sessionTimeOutRef.current)
+    // }
+
+    
+
      const [{basket, user}, dispatch] = useStateValue();
 
      const handleAuth = () => {
@@ -37,11 +49,18 @@ function Header() {
                     Hello Guest
                 </span>
             </div>
+
+            
             <div className="header-opt">
-                <span className='opt-lineTwo'>
+                <span className='opt-lineTwo'> 
                     {user ? 'Sign Out' : 'Sign In'}
+                    
                 </span>
+               
             </div>
+             
+
+             
 
             </Link>
             <div className="header-opt">
